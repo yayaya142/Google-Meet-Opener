@@ -39,8 +39,6 @@ For maximum convenience, consider creating a shortcut for the script to expedite
 For any questions, issues, or feedback, feel free to contact me directly.
 
 
-This project is licensed under the [MIT License](link-to-license). See the [LICENSE](link-to-license-file) file for details.
-
 
 
 
