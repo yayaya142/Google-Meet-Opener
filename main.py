@@ -12,4 +12,5 @@ if __name__ == '__main__':
     if (url is None):
         print("No meeting found")
         exit(0)
+    
     message_api().send_message(url)
