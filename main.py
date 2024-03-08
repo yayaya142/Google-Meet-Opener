@@ -1,18 +1,16 @@
 from web_api import WebApi
+from message_api import message_api
 import time
-import test
-
-
-
-
 
 
 if __name__ == '__main__':
-    print("Hello World")
     WebApi.open_web_api()
     time.sleep(6)
-    x = WebApi.get_open_web_url_api()
+    url = WebApi.get_open_web_url_api()
     print("----------")
-    print(x)
+    print(url)
+    if (url is None):
+        print("No meeting found")
+        exit(0)
     
-    
+    message_api().send_message(url)

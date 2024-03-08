@@ -4,14 +4,10 @@ import subprocess
 
 # this class control the web api 
 class WebApi:
-    # URL = 'meet.new'
-    # PREFIX = "meet"
-    # base_url = "https://meet.google.com/"
-    URL = 'https://www.example.com/'
-    PREFIX = "Example"
-    base_url = "https://testing.example.com/"
-    
-
+    URL = 'https://www.meet.new'
+    PREFIX = "Meet"
+    base_url = "https://meet.google.com/"
+  
     # this api is used to open the web browser and create a new meeting
     def open_web_api():
         webbrowser.open(WebApi.URL)
@@ -19,15 +15,11 @@ class WebApi:
     # this api is used to get the url of the open window
     def get_open_web_url_api():
         URL = get_open_url_with_power_shell()
-        if (URL is None):
-            return None
         URL = WebApi.extract_meeting_id(URL)
-        if (URL is None):
-            return None
         URL = WebApi.create_meeting_invite(URL)
-        if (URL is None):
-            return None
-        
+    
+
+    
         return URL
 
     # Define the extract_meeting_id function
